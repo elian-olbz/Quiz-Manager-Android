@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/linear2" android:background="@drawable/up_" android:padding="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/imageview2" android:background="@android:color/transparent" android:layout_width="90dp" android:layout_height="90dp" android:src="@drawable/white_q" android:scaleType="fitXY"/>
+        <TextView android:textSize="25sp" android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@+id/textview2" android:paddingLeft="8dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Quiz Manager"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/linear5" android:background="#2979ff" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/imageview3" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/ic_arrow_back_white" android:scaleType="center"/>
+        <TextView android:textSize="20sp" android:textColor="#ffffff" android:id="@+id/textview20" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="Quiz Mode" android:lines="1"/>
+        <TextView android:textSize="10sp" android:textColor="#000000" android:id="@+id/fname" android:layout_width="0dp" android:layout_height="wrap_content" android:text="fname" android:lines="1"/>
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@+id/linear50" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/imageview6" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/ic_format_list_numbered_white" android:scaleType="center"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/child1" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/linear52" android:padding="8dp" android:layout_width="match_parent" android:layout_height="240dp">
+                <ImageView android:id="@+id/imageview1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/default_image" android:scaleType="centerInside"/>
+            </LinearLayout>
+            <ScrollView android:id="@+id/vscroll1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <LinearLayout android:orientation="vertical" android:id="@+id/linear1" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/linear3" android:paddingTop="8dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/textview21" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0."/>
+                        <TextView android:textSize="14sp" android:textColor="#000000" android:id="@+id/ques" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView"/>
+                    </LinearLayout>
+                    <CheckBox android:textSize="14sp" android:textColor="#000000" android:id="@+id/checkbox1" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="CheckBox"/>
+                    <CheckBox android:textSize="14sp" android:textColor="#000000" android:id="@+id/checkbox2" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="CheckBox"/>
+                    <CheckBox android:textSize="14sp" android:textColor="#000000" android:id="@+id/checkbox3" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="CheckBox"/>
+                    <CheckBox android:textSize="14sp" android:textColor="#000000" android:id="@+id/checkbox4" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="CheckBox"/>
+                    <TextView android:textSize="12sp" android:textColor="#000000" android:id="@+id/c_a" android:padding="8dp" android:layout_width="0dp" android:layout_height="0dp"/>
+                </LinearLayout>
+            </ScrollView>
+            <Button android:textSize="16sp" android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:id="@+id/button1" android:background="#2196f3" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="13dp" android:layout_marginTop="9dp" android:layout_marginRight="13dp" android:layout_marginBottom="30dp" android:text="Next"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/child2" android:background="#ffffff" android:layout_width="321dp" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/linear6" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textColor="#000000" android:id="@+id/textview8" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Remaining time: "/>
+                <TextView android:textSize="16sp" android:textColor="#000000" android:id="@+id/textview9" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" android:layout_weight="1"/>
+                <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/imageview7" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9dp" android:src="@drawable/ic_assignment_white1" android:scaleType="fitXY"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/linear51" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <ListView android:id="@+id/listview1" android:padding="8dp" android:layout_width="match_parent" android:layout_height="match_parent" android:choiceMode="none"/>
+                <ListView android:id="@+id/listview2" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:choiceMode="none"/>
+            </LinearLayout>
+            <Button android:textSize="16sp" android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:id="@+id/submit_butn" android:background="#2196f3" android:paddingLeft="12dp" android:paddingTop="8dp" android:paddingRight="12dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginTop="9dp" android:layout_marginBottom="20dp" android:text="Submit"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

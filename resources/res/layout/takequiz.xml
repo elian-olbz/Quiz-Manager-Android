@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/_toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:popupTheme="@style/AppTheme.PopupOverlay"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <ScrollView android:id="@+id/vscroll1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <LinearLayout android:orientation="vertical" android:id="@+id/linear14" android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/linear7" android:paddingLeft="8dp" android:paddingTop="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/linear1" android:paddingBottom="9dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@+id/imageview1" android:layout_width="match_parent" android:layout_height="200dp" android:src="@drawable/up_" android:scaleType="fitXY"/>
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/linear3" android:paddingLeft="9dp" android:paddingRight="9dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp">
+                            <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#212121" android:layout_gravity="center_vertical" android:id="@+id/qname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="QUIZ NAME" android:lines="1" android:layout_weight="1"/>
+                            <TextView android:textSize="16sp" android:textColor="#212121" android:layout_gravity="center_vertical" android:id="@+id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DESCRIPTION" android:lines="1"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/linear4" android:paddingLeft="9dp" android:paddingRight="9dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="18sp" android:textColor="#212121" android:layout_gravity="center_vertical" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Name" android:lines="1" android:layout_weight="1"/>
+                            <TextView android:textSize="16sp" android:textColor="#212121" android:layout_gravity="center_vertical" android:id="@+id/items" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:text="30 items" android:lines="1"/>
+                            <TextView android:textSize="16sp" android:textColor="#212121" android:layout_gravity="center_vertical" android:id="@+id/dura" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="30 min" android:lines="1"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/linear19" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/linear18" android:paddingTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:layout_marginRight="9dp" android:layout_marginBottom="9dp">
+                        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/linear16" android:paddingTop="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="8dp" android:layout_marginRight="10dp">
+                            <EditText android:textSize="14sp" android:textColor="#000000" android:textColorHint="#607d8b" android:id="@+id/edittext3" android:paddingRight="9dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3dp"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/linear15" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13dp">
+                            <TextView android:textSize="14sp" android:textColor="#212121" android:id="@+id/textview15" android:paddingLeft="8dp" android:paddingTop="3dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Level:"/>
+                            <Spinner android:layout_gravity="center_vertical" android:id="@+id/spinner2" android:paddingTop="3dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:spinnerMode="dropdown"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/linear_hs" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="10dp">
+                            <EditText android:textSize="14sp" android:textColor="#000000" android:textColorHint="#607d8b" android:id="@+id/hs" android:paddingRight="9dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3dp"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/linear_col" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="10dp">
+                            <EditText android:textSize="14sp" android:textColor="#000000" android:textColorHint="#607d8b" android:id="@+id/col" android:paddingRight="9dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <Button android:textSize="16sp" android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:id="@+id/button2" android:background="#2196f3" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="13dp" android:layout_marginTop="9dp" android:layout_marginRight="13dp" android:layout_marginBottom="9dp" android:text="Next"/>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/linear8" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/linear9" android:background="#2196f3" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/imageview2" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_border_color_white" android:scaleType="fitXY"/>
+                <TextView android:textSize="12sp" android:textColor="#ffffff" android:id="@+id/textview12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mode"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/linear10" android:background="#2196f3" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/imageview3" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_folder_white" android:scaleType="fitXY"/>
+                <TextView android:textSize="12sp" android:textColor="#ffffff" android:id="@+id/textview13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="File"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

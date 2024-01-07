@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/_toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:popupTheme="@style/AppTheme.PopupOverlay"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:id="@+id/linear1" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/linear5" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/linear2" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12sp" android:textColor="#000000" android:id="@+id/textview1" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Name:"/>
+                    <TextView android:textSize="12sp" android:textColor="#000000" android:id="@+id/textview2" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Name Surname" android:layout_weight="1"/>
+                    <TextView android:textSize="12sp" android:textColor="#000000" android:id="@+id/textview3" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Course/Year/Block"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/linear3" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12sp" android:textColor="#000000" android:id="@+id/textview4" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Score:"/>
+                    <TextView android:textSize="12sp" android:textColor="#000000" android:id="@+id/score_view" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/linear4" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp">
+                <TextView android:textSize="12sp" android:textColor="#000000" android:id="@+id/textview7" android:paddingLeft="20dp" android:paddingTop="8dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="203dp" android:layout_height="wrap_content" android:text="Question"/>
+                <TextView android:textSize="12sp" android:textColor="#000000" android:gravity="center_horizontal" android:id="@+id/textview8" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Correct\10Answer" android:layout_weight="1"/>
+                <TextView android:textSize="12sp" android:textColor="#000000" android:gravity="center_horizontal" android:id="@+id/textview9" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Answer" android:layout_weight="1"/>
+            </LinearLayout>
+            <ListView android:id="@+id/listview1" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:choiceMode="none" android:layout_weight="1"/>
+            <Button android:textSize="14sp" android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:id="@+id/button1" android:background="#2196f3" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:layout_marginBottom="30dp" android:text="Count"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/linear1" android:background="@drawable/down_" android:padding="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/imageview1" android:background="@android:color/transparent" android:layout_width="81dp" android:layout_height="81dp" android:src="@drawable/ic_account_circle_white" android:scaleType="fitXY"/>
+        <TextView android:textSize="20sp" android:textColor="#ffffff" android:id="@+id/textview1" android:paddingLeft="8dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="Log in to continue.."/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/linear2" android:background="#ffffff" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp">
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/linear3" android:layout_width="300dp" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                <ImageView android:id="@+id/imageview2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="5dp" android:src="@drawable/ic_person_grey" android:scaleType="center"/>
+                <EditText android:textSize="14sp" android:textColor="#000000" android:textColorHint="#607d8b" android:id="@+id/edittext3" android:padding="8dp" android:layout_width="260dp" android:layout_height="wrap_content" android:hint="Email" android:lines="1"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/linear4" android:layout_width="300dp" android:layout_height="wrap_content" android:layout_marginBottom="5dp">
+                <ImageView android:id="@+id/imageview3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="5dp" android:src="@drawable/ic_lock_grey" android:scaleType="center"/>
+                <EditText android:textSize="14sp" android:textColor="#000000" android:textColorHint="#607d8b" android:id="@+id/edittext4" android:padding="8dp" android:layout_width="260dp" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:hint="Password" android:lines="1" android:inputType="textPassword"/>
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:textSize="14sp" android:textColor="#000000" android:id="@+id/button1" android:background="#ffffff" android:padding="8dp" android:layout_width="280dp" android:layout_height="40dp" android:text="LOG IN"/>
+        <TextView android:textSize="14sp" android:textColor="#ffffff" android:id="@+id/textview2" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Forgot password?"/>
+        <TextView android:textSize="14sp" android:textColor="#ffffff" android:id="@+id/textview3" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Create account"/>
+    </LinearLayout>
+</LinearLayout>
